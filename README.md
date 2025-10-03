@@ -59,10 +59,10 @@ All “bi*” modes optionally apply a final blend back toward the original embe
 
 ## Quick Usage
 
-- Use `WASABI CLIP Text Encode` to encode text and immediately pass through `WASABI Conditioning Modulate` with your chosen `mode`, `scale`, and optional schedules/advanced options.
-- For safe defaults:
-  - Start with `mode=scale` and `scale` in `[1.1, 1.8]` for mild→strong prompt emphasis.
-  - Try `bislerp` or `bihybrid` with small `blend_back` (e.g., `0.25–0.5`) for controlled semantic pull toward the reference.
+- Use `WASABI CLIP Text Encode` to encode text ready for sampler conditioning
+- Or conditioning from CLIPTextEncode or other encoding nodes, then pass through `WASABI Conditioning Modulate` with your chosen `mode`, `scale`, and optional schedules/advanced options.
+
+There is the optional `Schedule Options` node that can be used to generate schedules for `ref_schedule`, `scale_schedule`, and `blend_schedule`. As well as the `Advanced Options` node that can be used to generate advanced options for `hybrid_angle_threshold_deg`, `hybrid_smoothness`, `angle clamp_theta_max_deg`, `sbezier_tension`, `ease_kind`, and `ease_gamma` for the advanced bi* modes.
 
 ## Notes
 
