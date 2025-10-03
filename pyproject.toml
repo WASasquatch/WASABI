@@ -1,0 +1,31 @@
+[project]
+name = "WASABI"
+version = "1.0.0"
+authors = [
+    { name="WASasquatch", email="jordanslost@gmail.com" },
+]
+description = "WASABI: Weighted Adaptive Slerp And Blend Interpolator... add flavor to your prompts!"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT License" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: GPU :: NVIDIA CUDA"
+]
+dependencies = [
+    "torch"
+]
+
+[project.urls]
+Repository = "https://github.com/WASasquatch/wasabi"
+# Documentation = "https://github.com/WASasquatch/wasabi/wiki"
+"Bug Tracker" = "https://github.com/WASasquatch/wasabi/issues"
+
+[tool.comfy]
+PublisherId = "was"
+DisplayName = "WASABI"
+# Icon = "https://raw.githubusercontent.com/WASasquatch/wasabi/main/icon.png"
+# Banner = "https://raw.githubusercontent.com/WASasquatch/wasabi/main/banner.png"
+requires-comfyui = ">=1.3.0"
