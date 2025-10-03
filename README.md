@@ -2,7 +2,7 @@
 ## Weighted Adaptive Slerp And Blend Interpolator.
 ### Because your prompts deserve flavor.
 
-WASABI is a custom node for ComfyUI that takes your prompt, scales it, and interpolates it with the original reference embedding, this seems to show substanial promise in terms of quality of prompt adherence with Wan 2.1/2.2. 
+WASABI is a custom node for ComfyUI that takes your prompt, scales it, and interpolates it with the original reference embedding, this seems to show substantial promise in terms of quality of prompt adherence with Wan 2.1/2.2. 
 
 I have yet to verify effectiveness in other models.
 
